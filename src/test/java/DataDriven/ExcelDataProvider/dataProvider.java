@@ -15,7 +15,7 @@ public class dataProvider {
 
 	DataFormatter formatter = new DataFormatter();
 
-	@Test(dataProvider = "driveTest")
+	@Test(dataProvider = "driveTest", groups="Sanity")
 	public void testCaseData(String greeting, String communication, String id) {
 		System.out.println(greeting + "||" + communication + "||" + id);
 
@@ -23,7 +23,7 @@ public class dataProvider {
 
 	@DataProvider(name = "driveTest")
 	public Object[][] getData() throws IOException {
-		String path = "C:\\Users\\dibya\\OneDrive\\Documents\\OneNote Notebooks\\DataDriven_ExcelIntregation.xlsx";
+		String path = "C:\\Desktop Items\\Excel\\ExcelDataProvider.xlsx";
 		
 
 		try (FileInputStream fis = new FileInputStream(path); 
@@ -33,16 +33,21 @@ public class dataProvider {
 
 			XSSFSheet sheet = wb.getSheetAt(0);
 			int rowCount = sheet.getPhysicalNumberOfRows();
-			int colCount = sheet.getRow(0).getLastCellNum();
+			XSSFRow row=sheet.getRow(0);
+			int colCount = row.getLastCellNum();
 
 			// Create a 2D array to store the data
-			Object[][] data = new Object[rowCount - 1][colCount];
+			Object[][] data = new Object[rowCount-1][colCount];
 
 			// Iterate through rows and columns to read data
-			for (int i = 1; i < rowCount; i++) { // Start from 1 to skip header row
-				XSSFRow row = sheet.getRow(i+1);
-				for (int j = 0; j < colCount; j++) {
+			for (int i = 0; i < rowCount-1; i++) 
+			{ // Start from 1 to skip header row
+					 row=sheet.getRow(i+1);
+					 
+				for (int j = 0; j < colCount; j++) 
+				{
 					XSSFCell cell = row.getCell(j);
+					
 					data[i][j] = formatter.formatCellValue(cell);
 				}
 			}

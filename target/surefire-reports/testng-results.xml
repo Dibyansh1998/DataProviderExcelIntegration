@@ -2,12 +2,15 @@
 <testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-03T11:34:44 IST" name="Suite" finished-at="2024-06-03T11:34:45 IST" duration-ms="672">
+  <suite started-at="2024-06-03T11:40:50 IST" name="Suite" finished-at="2024-06-03T11:40:50 IST" duration-ms="512">
     <groups>
+      <group name="Sanity">
+        <method signature="dataProvider.testCaseData(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:DataDriven.ExcelDataProvider.dataProvider@34c01041]" name="testCaseData" class="DataDriven.ExcelDataProvider.dataProvider"/>
+      </group> <!-- Sanity -->
     </groups>
-    <test started-at="2024-06-03T11:34:44 IST" name="Test" finished-at="2024-06-03T11:34:45 IST" duration-ms="672">
+    <test started-at="2024-06-03T11:40:50 IST" name="Test" finished-at="2024-06-03T11:40:50 IST" duration-ms="512">
       <class name="DataDriven.ExcelDataProvider.dataProvider">
-        <test-method signature="testCaseData(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:DataDriven.ExcelDataProvider.dataProvider@1941a8ff]" started-at="2024-06-03T11:34:45 IST" name="testCaseData" data-provider="driveTest" finished-at="2024-06-03T11:34:45 IST" duration-ms="16" status="PASS">
+        <test-method signature="testCaseData(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:DataDriven.ExcelDataProvider.dataProvider@34c01041]" started-at="2024-06-03T11:40:50 IST" name="testCaseData" data-provider="driveTest" finished-at="2024-06-03T11:40:50 IST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -28,7 +31,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCaseData -->
-        <test-method signature="testCaseData(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:DataDriven.ExcelDataProvider.dataProvider@1941a8ff]" started-at="2024-06-03T11:34:45 IST" name="testCaseData" data-provider="driveTest" finished-at="2024-06-03T11:34:45 IST" duration-ms="2" status="PASS">
+        <test-method signature="testCaseData(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:DataDriven.ExcelDataProvider.dataProvider@34c01041]" started-at="2024-06-03T11:40:50 IST" name="testCaseData" data-provider="driveTest" finished-at="2024-06-03T11:40:50 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -49,7 +52,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testCaseData -->
-        <test-method signature="testCaseData(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:DataDriven.ExcelDataProvider.dataProvider@1941a8ff]" started-at="2024-06-03T11:34:45 IST" name="testCaseData" data-provider="driveTest" finished-at="2024-06-03T11:34:45 IST" duration-ms="1" status="PASS">
+        <test-method signature="testCaseData(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:DataDriven.ExcelDataProvider.dataProvider@34c01041]" started-at="2024-06-03T11:40:50 IST" name="testCaseData" data-provider="driveTest" finished-at="2024-06-03T11:40:50 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
